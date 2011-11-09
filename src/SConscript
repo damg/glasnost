@@ -1,0 +1,7 @@
+# -*- mode: python -*-
+
+Import("env")
+
+SUBDIRS=Split("glasnostd logger")
+for e in SUBDIRS:
+    env.SConscript("%s/SConscript" % e)

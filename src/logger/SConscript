@@ -1,0 +1,11 @@
+# -*- mode: python -*-
+
+Import("env")
+
+HEADERS=Split("logger.h")
+SOURCES=Split("logger.c")
+HTARGET=Split("#/include/glasnost/logger/")
+TARGET=Split("#/lib/glasnost-logger")
+
+env.Library(source=SOURCES, target=TARGET)
+env.Install(source=HEADERS, target=HTARGET)

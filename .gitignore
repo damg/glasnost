@@ -1,0 +1,10 @@
+bin/
+lib/
+include/
+*~
+*.o
+*.a
+*.so
+*.so.*
+.sconsign.dblite
+#*#

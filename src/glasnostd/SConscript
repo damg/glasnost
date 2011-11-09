@@ -1,0 +1,8 @@
+# -*- mode: python -*-
+
+Import("env")
+
+SOURCES=Split("main.c")
+TARGET="#/bin/glasnostd"
+
+env.Program(source=SOURCES, target=TARGET)
